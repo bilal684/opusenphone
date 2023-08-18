@@ -17,6 +17,12 @@ If anyone at the STM does not want this project to be available online, please c
 
 ## Usage
 
+Note: There seems to be a bug where if you click "Continue to payment" after adding a fare too fast, it might just infinitely do "Preparing order".
+To avoid the bug, wait a little before clicking "Continue to payment" (not sure why).
+
+I have personally been able to reload multiple tickets: single ticket, 2 way ticket and an unlimited evening ticket.
+Though I have not tried the more expensive trips due to the possible risks.
+
 There is only a restart button to refresh the page, use with caution as using it while the application is reloading your OPUS, most definitely will eat your money and not reload it properly.
 
 The application will vibrate on detecting your OPUS and will vibrate again when it completes interacting with the card.
@@ -37,9 +43,10 @@ Disclaimer: I don't make Android applications.
 
 ## Notes
 
-### Issue
+### Possible Issue
 
 This is not specific to this application, rather the whole OPUS en ligne application.
+Note: I have not had this happen, but it might be possible.
 
 For some reason when you reach the stage where the application actually reloads your OPUS, it is possible for the OPUS en ligne to fail to write to your card and not give you back your money.
 

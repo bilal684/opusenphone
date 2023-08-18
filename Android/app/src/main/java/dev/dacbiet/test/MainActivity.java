@@ -231,11 +231,14 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                                 try {
                                     client.shutdown(false);
 
-                                    OpusCard.close();
-                                    vibrate();
-                                } catch (IOException e) {
+                                    if (OpusCard.isConnected()) {
+                                        OpusCard.close();
+                                    }
+                                } catch (Exception e) {
 
                                 }
+                                vibrate();
+
                             }
 
                         });
